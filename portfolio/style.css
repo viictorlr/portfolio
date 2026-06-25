@@ -1,0 +1,164 @@
+/* --- VARIABLES --- */
+:root[data-theme="dark"] {
+    --bg: #0a0a0a;
+    --text: #ffffff;
+    --border: #262626;
+    --hover-bg: #171717;
+    --accent: #a3a3a3;
+}
+:root[data-theme="light"] {
+    --bg: #ffffff;
+    --text: #0a0a0a;
+    --border: #e5e5e5;
+    --hover-bg: #f5f5f5;
+    --accent: #525252;
+}
+
+/* --- ESTILOS BASE --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* --- INTERFAZ FIJA --- */
+.top-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
+}
+.btn-control {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.btn-control:hover { background: var(--hover-bg); }
+
+/* --- SECCIONES --- */
+section {
+    min-height: 100vh;
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+/* --- HERO (PARALELO) --- */
+.hero-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+.avatar-container { flex-shrink: 0; }
+.hero-avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--text);
+}
+.hero-content h1 { font-size: 3.5rem; font-weight: 700; letter-spacing: -1px; }
+.hero-content .subtitle { font-size: 1.25rem; color: var(--accent); margin-bottom: 25px; }
+.nav-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn-main {
+    border: 1px solid var(--text);
+    padding: 10px 18px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.btn-main:hover { background: var(--text); color: var(--bg); }
+
+/* --- SOBRE MÍ & IDIOMAS --- */
+.languages-box { margin-top: 25px; padding-top: 20px; border-top: 1px dashed var(--border); }
+.languages-box h4 { text-transform: uppercase; letter-spacing: 1px; margin-bottom: 10px; font-size: 0.9rem; }
+.languages-box ul { list-style: none; display: flex; gap: 20px; flex-wrap: wrap; }
+
+/* --- COMPETENCIAS (BADGES) --- */
+.skills-container { display: flex; flex-direction: column; gap: 25px; }
+.skills-category h3 { font-size: 1rem; color: var(--accent); margin-bottom: 12px; font-weight: 500; }
+.badges-grid { display: flex; flex-wrap: wrap; gap: 8px; }
+.badges-grid img { height: 28px; }
+
+/* --- LÍNEAS DE TIEMPO (EXPERIENCIA & FORMACIÓN) --- */
+.timeline-item { margin-bottom: 35px; }
+.timeline-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; margin-bottom: 5px; }
+.timeline-header h3 { font-size: 1.2rem; font-weight: 600; }
+.timeline-header .date { font-size: 0.9rem; color: var(--accent); }
+.company { font-weight: 500; opacity: 0.8; margin-bottom: 10px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.timeline-details { padding-left: 20px; color: var(--accent); font-size: 0.95rem; }
+.timeline-details li { margin-bottom: 5px; }
+.certifications-box { margin-top: 30px; padding: 20px; border: 1px dashed var(--border); }
+.certifications-box h3 { font-size: 1rem; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+.certifications-box ul { list-style: none; }
+.certifications-box li { margin-bottom: 8px; }
+.certifications-box a:hover { border-bottom: 1px solid var(--text); }
+
+/* --- PROYECTOS (CASILLAS) --- */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.project-card { border: 1px solid var(--border); padding: 25px; display: flex; flex-direction: column; justify-content: space-between; cursor: pointer; min-height: 180px; }
+.project-card:hover { background: var(--hover-bg); border-color: var(--text); }
+.project-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+.project-card p { color: var(--accent); font-size: 0.9rem; margin-bottom: 15px; }
+.project-tech { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; opacity: 0.6; font-weight: 600; }
+
+/* --- CONTACTO --- */
+.contact-location, .contact-info { font-size: 1.1rem; margin-bottom: 10px; }
+.contact-links { display: flex; gap: 25px; margin-top: 20px; font-size: 1.1rem; }
+.contact-links a { border-bottom: 1px dashed var(--accent); }
+.contact-links a:hover { color: var(--accent); border-bottom-style: solid; }
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .hero-layout { flex-direction: column; text-align: center; gap: 20px; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .nav-buttons { flex-direction: column; width: 100%; }
+    .btn-main { text-align: center; }
+    .timeline-header { flex-direction: column; gap: 5px; }
+    section { padding: 60px 20px; }
+}
+
+/* --- BOTÓN DESTACADO DE DESCARGA DE CV --- */
+.btn-download {
+    background-color: var(--text);
+    color: var(--bg);
+    font-weight: 600;
+}
+
+.btn-download:hover {
+    background-color: var(--hover-bg) !important;
+    color: var(--text) !important;
+    border-color: var(--text);
+}

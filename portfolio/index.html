@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Larios | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BOTONES SUPERIORES (Idiomas y temas) -->
+    <div class="top-controls">
+        <button class="btn-control" id="lang-btn" onclick="toggleLanguage()">EN</button>
+        <button class="btn-control" id="theme-btn" onclick="toggleTheme()">☀️ LIGHT</button>
+    </div>
+
+    <!-- 1. SECCIÓN HOME / HERO -->
+    <section id="hero">
+        <div class="hero-layout">
+            <div class="avatar-container">
+                <img src="IMG_0752.png" alt="Victor Larios" class="hero-avatar">
+            </div>
+            <div class="hero-content">
+                <h1>Victor Larios</h1>
+                <p class="subtitle" data-key="hero-subtitle">Desarrollador de Aplicaciones Multiplataforma</p>
+                <div class="nav-buttons">
+                    <a href="#sobre-mi" class="btn-main" data-key="btn-about">Sobre mí</a>
+                    <a href="#competencias" class="btn-main" data-key="btn-skills">Competencias</a>
+                    <a href="#experiencia" class="btn-main" data-key="btn-experience">Experiencia</a>
+                    <a href="#proyectos" class="btn-main" data-key="btn-projects">Proyectos</a>
+                    <a href="#formacion" class="btn-main" data-key="btn-education">Formación</a>
+                    <a href="#contacto" class="btn-main" data-key="btn-contact">Contacto</a>
+                    <a href="CopiaCvVictorLarios.pdf" class="btn-main btn-download" download data-key="btn-cv">Descargar CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. SOBRE MÍ -->
+    <section id="sobre-mi">
+        <h2 data-key="title-about">Sobre mí</h2>
+        <p data-key="text-about">
+            Soy una persona con buena capacidad de trabajo en equipo, actitud positiva y compromiso. Responsable, resolutivo y con iniciativa para afrontar retos técnicos. Comunicativo, puntual y adaptable a nuevos entornos y tecnologías.
+        </p>
+        <div class="languages-box">
+            <h4 data-key="title-lang">Idiomas</h4>
+            <ul>
+                <li><strong data-key="lang-es">Castellano:</strong> <span data-key="lang-nat">Nativo</span></li>
+                <li><strong data-key="lang-ca">Catalán:</strong> <span data-key="lang-nat">Nativo</span></li>
+                <li><strong data-key="lang-en">Inglés:</strong> <span data-key="lang-inter">Intermedio</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. COMPETENCIAS -->
+    <section id="competencias">
+        <h2 data-key="title-skills">Competencias</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3 data-key="skill-lan">Lenguajes</h3>
+                <div class="badges-grid">
+                    <img src="https://img.shields.io/badge/Java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/Kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/C%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
+                    <img src="https://img.shields.io/badge/C-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white" alt="C">
+                    <img src="https://img.shields.io/badge/Visual%20Basic-007ACC?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Basic">
+                    <img src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
+                    <img src="https://img.shields.io/badge/CSS3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
+                    <img src="https://img.shields.io/badge/PHP-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3 data-key="skill-frame">Frameworks & Tecnologías</h3>
+                <div class="badges-grid">
+                    <img src="https://img.shields.io/badge/Android%20SDK-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android SDK">
+                    <img src="https://img.shields.io/badge/JavaFX-%23FF0000.svg?style=for-the-badge&logo=oracle&logoColor=white" alt="JavaFX">
+                    <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate">
+                    <img src="https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring">
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-key="skill-db">Bases de Datos</h3>
+                <div class="badges-grid">
+                    <img src="https://img.shields.io/badge/MySQL-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                    <img src="https://img.shields.io/badge/SQLite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite">
+                    <img src="https://img.shields.io/badge/PostgreSQL-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                    <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+                    <img src="https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB">
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3 data-key="skill-tools">Herramientas & Otros</h3>
+                <div class="badges-grid">
+                    <img src="https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                    <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+                    <img src="https://img.shields.io/badge/Android%20Studio-3DDC84?style=for-the-badge&logo=androidstudio&logoColor=white" alt="Android Studio">
+                    <img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=for-the-badge&logo=visualstudio&logoColor=white" alt="Visual Studio">
+                    <img src="https://img.shields.io/badge/Scrum-009444?style=for-the-badge&logo=scrumalliance&logoColor=white" alt="Scrum">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. EXPERIENCIA LABORAL -->
+    <section id="experiencia">
+        <h2 data-key="title-experience">Experiencia Laboral</h2>
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <h3 data-key="exp-role">Programador Junior / Técnico de Soporte</h3>
+                <span class="date">Julio 2025 - Febrero 2026</span>
+            </div>
+            <p class="company">CS&M FARMATIC</p>
+            <ul class="timeline-details">
+                <li data-key="exp-d1">Desarrollo y mantenimiento de aplicaciones web en PHP y MySQL.</li>
+                <li data-key="exp-d2">Actualización y despliegue de aplicaciones.</li>
+                <li data-key="exp-d3">Soporte técnico a usuarios de ERP: resolución de incidencias y formación.</li>
+                <li data-key="exp-d4">Gestión de inventarios y configuraciones del sistema.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 5. PROYECTOS (Casillas Clickables) -->
+    <section id="proyectos">
+        <h2 data-key="title-projects">Proyectos Destacados</h2>
+        <div class="projects-grid">
+            <!-- Proyecto 1: Pon aquí tus repositorios reales modificando el enlace -->
+            <div class="project-card" onclick="window.open('https://github.com/viictorlr/java-data-access-architecture', '_blank')">
+                <div>
+                    <h3>Proyecto Java Data Access Architecture</h3>
+                    <p data-key="proj-desc1">Implementación de una capa de acceso a datos (DAL) en Java que demuestra patrones arquitectónicos mediante el uso de transacciones JDBC nativas y el framework Hibernate ORM.</p>
+                </div>
+                <div class="project-tech">Java / Spring Boot / MySQL</div>
+            </div>
+
+            <div class="project-card" onclick="window.open('https://github.com/viictorlr/app-gym', '_blank')">
+                <div>
+                    <h3>App Gimnasio</h3>
+                    <p data-key="proj-desc2">App en Kotlin de gestión de rutinas de gimnasio.</p>
+                </div>
+                <div class="project-tech">Kotlin / Android SDK / SQLite</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FORMACIÓN ACADÉMICA -->
+    <section id="formacion">
+        <h2 data-key="title-education">Formación</h2>
+        
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <h3 data-key="edu-title1">Grado Superior: Desarrollo de Aplicaciones Multiplataforma</h3>
+                <span class="date">2023 - 2025</span>
+            </div>
+            <p class="company">Institut Marianao, Sant Boi de Llobregat</p>
+            <ul class="timeline-details">
+                <li>Java · Spring Boot · Hibernate · Kotlin · JavaFX.</li>
+                <li data-key="edu-d1">Bases de datos relacionales (MySQL, Oracle) y MongoDB.</li>
+                <li data-key="edu-d2">Desarrollo web (HTML, CSS, XML).</li>
+                <li data-key="edu-d3">Virtualización y administración básica de sistemas (Linux, Windows).</li>
+                <li data-key="edu-d4">Control de versiones con Git y colaboración en equipo mediante GitHub (ramas, commits y merges).</li>
+            </ul>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-header">
+                <h3 data-key="edu-title2">Grado Medio: Hostelería y Turismo</h3>
+                <span class="date">2019 - 2021</span>
+            </div>
+            <p class="company">IES Martí Dot, Sant Feliu de Llobregat</p>
+        </div>
+
+        <div class="certifications-box">
+            <h3 data-key="title-cert">Certificaciones Complementarias</h3>
+            <ul>
+                <li><a href="https://freecodecamp.org/certification/viictorlr/python-v9" target="_blank">FreeCodeCamp: Python Certification ↗</a></li>
+                <li><a href="https://www.freecodecamp.org/certification/viictorlr/responsive-web-design-v9" target="_blank">FreeCodeCamp: Responsive Web Design ↗</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 7. CONTACTO -->
+    <section id="contacto">
+        <h2 data-key="title-contact">Contacto</h2>
+        <p class="contact-location">📍 Cornellà de Llobregat, Barcelona</p>
+        <p class="contact-info">🚗 Carnet B / Vehículo propio</p>
+        <div class="contact-links">
+            <a href="mailto:vector2.053@gmail.com">Email</a>
+            <a href="https://github.com/viictorlr" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/victorlarios12/">Linkedin</a>
+            <a href="tel:+34675584913">675 58 49 13</a>
+        </div>
+    </section>
+
+    <script>
+        function toggleTheme() {
+            const root = document.documentElement;
+            const currentTheme = root.getAttribute('data-theme');
+            const themeBtn = document.getElementById('theme-btn');
+            if (currentTheme === 'dark') {
+                root.setAttribute('data-theme', 'light');
+                themeBtn.innerText = '🌙 DARK';
+            } else {
+                root.setAttribute('data-theme', 'dark');
+                themeBtn.innerText = '☀️ LIGHT';
+            }
+        }
+
+        let currentLang = 'es';
+        const translations = {
+            es: {
+                "hero-subtitle": "Desarrollador de Aplicaciones Multiplataforma",
+                "btn-about": "Sobre mí", "btn-cv": "Descargar Cv", "btn-skills": "Competencias", "btn-experience": "Experiencia", "btn-projects": "Proyectos", "btn-education": "Formación", "btn-contact": "Contacto",
+                "title-about": "Sobre mí",
+                "text-about": "Soy una persona con buena capacidad de trabajo en equipo, actitud positiva y compromiso. Responsable, resolutivo y con iniciativa para afrontar retos técnicos. Comunicativo, puntual y adaptable a nuevos entornos y tecnologías.",
+                "title-lang": "Idiomas", "lang-es": "Castellano", "lang-ca": "Catalán", "lang-en": "Inglés", "lang-nat": "Nativo", "lang-inter": "Intermedio",
+                "title-skills": "Competencias", "skill-lan": "Lenguajes", "skill-frame": "Frameworks & Tecnologías", "skill-db": "Bases de Datos", "skill-tools": "Herramientas & Otros",
+                "title-experience": "Experiencia Laboral", "exp-role": "Programador Junior / Técnico de Soporte",
+                "exp-d1": "Desarrollo y mantenimiento de aplicaciones web en PHP y MySQL.", "exp-d2": "Actualización y despliegue de aplicaciones.", "exp-d3": "Soporte técnico a usuarios de ERP: resolución de incidencias y formación.", "exp-d4": "Gestión de inventarios y configuraciones del sistema.",
+                "title-projects": "Proyectos Destacados", "proj-desc1": "Descripción de tu proyecto principal desarrollado. Haz clic en este bloque para ir al repositorio de GitHub de forma directa.", "proj-desc2": "Descripción de otra aplicación o desarrollo relevante de tu portafolio adaptado a móviles o escritorio.",
+                "title-education": "Formación", "edu-title1": "Grado Superior: Desarrollo de Aplicaciones Multiplataforma",
+                "edu-d1": "Bases de datos relacionales (MySQL, Oracle) y MongoDB.", "edu-d2": "Desarrollo web (HTML, CSS, XML).", "edu-d3": "Virtualización y administración básica de sistemas (Linux, Windows).", "edu-d4": "Control de versiones con Git y colaboración en equipo mediante GitHub (ramas, commits y merges).",
+                "edu-title2": "Grado Medio: Hostelería y Turismo", "title-cert": "Certificaciones Complementarias", "title-contact": "Contacto"
+            },
+            en: {
+                "hero-subtitle": "Multiplatform Applications Developer",
+                "btn-about": "About me", "btn-cv": "Download Cv", "btn-skills": "Skills", "btn-experience": "Experience", "btn-projects": "Projects", "btn-education": "Education", "btn-contact": "Contact",
+                "title-about": "About me",
+                "text-about": "I am a person with good teamwork capacity, a positive attitude, and high commitment. Responsible, problem-solver, and proactive facing technical challenges. Communicative, punctual, and highly adaptable to new environments and technologies.",
+                "title-lang": "Languages", "lang-es": "Spanish", "lang-ca": "Catalan", "lang-en": "English", "lang-nat": "Native", "lang-inter": "Intermediate",
+                "title-skills": "Technical Skills", "skill-lan": "Languages", "skill-frame": "Frameworks & Technologies", "skill-db": "Databases", "skill-tools": "Tools & Others",
+                "title-experience": "Work Experience", "exp-role": "Junior Programmer / Support Technician",
+                "exp-d1": "Web application development and maintenance using PHP and MySQL.", "exp-d2": "Application updating and deployment environments.", "exp-d3": "ERP user support: technical troubleshooting and software training.", "exp-d4": "Inventory management and system core configurations.",
+                "title-projects": "Featured Projects", "proj-desc1": "Description of your main developed project. Click on this block to navigate directly to the GitHub repository.", "proj-desc2": "Description of another application or relevant work in your portfolio tailored for mobile or desktop.",
+                "title-education": "Education", "edu-title1": "Higher Degree: Multiplatform Applications Development",
+                "edu-d1": "Relational Databases (MySQL, Oracle) and MongoDB.", "edu-d2": "Web development (HTML, CSS, XML).", "edu-d3": "Virtualization and basic systems administration (Linux, Windows).", "edu-d4": "Version control systems with Git and team collaboration via GitHub (branches, commits, and merges).",
+                "edu-title2": "Intermediate Degree: Hospitality and Tourism", "title-cert": "Additional Certifications", "title-contact": "Contact"
+            }
+        };
+
+        function toggleLanguage() {
+            const langBtn = document.getElementById('lang-btn');
+            currentLang = currentLang === 'es' ? 'en' : 'es';
+            langBtn.innerText = currentLang === 'es' ? 'EN' : 'ES';
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.getAttribute('data-key');
+                if (translations[currentLang][key]) {
+                    element.innerText = translations[currentLang][key];
+                }
+            });
+        }
+    </script>
+</body>
+</html>
